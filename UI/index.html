@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME: Htet Paing Phyoe</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendore/texllate/animate.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        body {
+            background-color: #fbf3e4;
+        }
+
+        @keyframes popup {
+            0% {
+                opacity: 0;
+                scale: 0;
+            }
+
+            75% {
+                opacity: 0.5;
+                scale: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="sticky top-0 z-50 opacity-90">
+        <nav class="flex p-4 justify-between items-center bg-red-500 text-white w-full h-auto">
+            <!-- Mobile Menu Icon -->
+            <div class="sm:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Centered Welcome Message (Mobile) -->
+            <div class="sm:hidden flex justify-center w-full text-center">
+                <a href="#" class="hover:text-black duration-500"><span class="text-2xl tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">Welcome TO my portfolio</span></a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden sm:flex gap-10 tracking-wider text-2xl mx-auto" style="font-family: 'Bebas Neue', sans-serif;">
+                <li><a href="#" class="hover:text-black duration-500 cursor-pointer">HOME</a></li>
+                <li><a href="#project" class="hover:text-black duration-500 cursor-pointer">PROJECTS</a></li>
+                <li><a href="#" class="hover:text-black duration-500 cursor-pointer">CONTACT ME</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu bg-red-500 pb-4">
+            <ul class="flex flex-col items-center gap-6 tracking-wide text-2xl text-white" style="font-family: 'Bebas Neue', sans-serif;">
+                <li><a href="#" class="hover:text-black duration-500 cursor-pointer">HOME</a></li>
+                <li><a href="#" class="hover:text-black duration-500 cursor-pointer">PROJECTS</a></li>
+                <li><a href="#" class="hover:text-black duration-500 cursor-pointer">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- body of head part -->
+    <div class="flex w-full max-h-[400px] mb-0 md:mb-30 lg:mb-40 sm:mt-20 mt-10 bg-[#fbf3e4]">
+        <div class="sm:w-[65%] sm:p-6 p-2 w-[80%] flex flex-col justify-center items-center h-auto" style="font-family: 'Bebas Neue', sans-serif;">
+            <h1 class="text-[15px] md:text-[35px] lg:text-[50px] tracking-wide introduction">Hello! I am Htet Paing Phyoe.</h1>
+            <hr class="sm:w-1/3 w-1/2 border-3 border-black">
+            <h1 class="text-[30px] tracking-wider">ABOUT ME</h1>
+            <p class="sm:text-md text-xs sm:text-justify text-center" style="font-family: 'Poppins', sans-serif;">I am a software engineering(HND) and web developer.</p>
+            <p class="sm:text-md text-xs sm:text-justify text-center" style="font-family: 'Poppins', sans-serif;">So that, I am proficient in HTML, CSS, JavaScript, PHP, MySQL and etc.</p>
+        </div>
+        <div class="w-[65%] md:w-[30%] lg:w-[20%] h-[300px] sm:p-4 p-2 flex flex-col-2 sm:justify-start justify-center items-center">
+            <img src="../img/profile.jpg" class="w-[100%] h-auto rounded-full border-3 border-black">
+        </div>
+    </div>
+    <div class="sm:hidden mt-6 flex justify-center opacity-[70%] items-center">
+        <div class="h-56 border-1 border-black"></div>
+    </div>
+    <!--body start-->
+    <div class="sm:flex flex-col-2 w-full mt-10 md:mt-20 lg:mt-48 gap-6 md:gap-10 lg:gap-20 mb-20" style="animation: popup 5s linear; animation-timeline: view(); animation-range: entry 0">
+        <div class="w-full pl-4 md:pl-6 lg:pl-10 pr-4 md:pr-4 lg:pr-6">
+            <h1 class="text-[100px] tracking-wider text-[#b91646]" style="font-family: 'Bebas Neue', sans-serif;">Vision</h1>
+            <p class="mb-8 text-justify">To pioneer the digital frontier by crafting transformative web experiences that seamlessly blend innovation with accessibility. My vision is to build intelligent, human-centered solutions that elevate businesses, empower communities, and redefine how people interact with technology across all platforms and devices worldwide.</p>
+            <!-- <div class="flex w-full justify-center">
+                <button class="rounded-md border-2 border-black text-white text-lg bg-[#b91646] w-[25%] h-12 tracking-[8px] text-center" style="font-family: 'Bebas Neue', sans-serif;">More</button>
+            </div> -->
+        </div>
+        <div class="sm:flex hidden justify-center items-center">
+            <div class="h-56 border-1 border-black"></div>
+        </div>
+        <div class="sm:hidden sm:mt-0 my-10 flex justify-center items-center">
+            <div class="w-[400px] border-1 border-black"></div>
+        </div>
+        <div class="w-full pl-4 pr-4">
+            <h1 class="text-[100px] tracking-wider text-[#105652]" style="font-family: 'Bebas Neue', sans-serif;">Mission</h1>
+            <p class="mb-8 text-justify">To architect exceptional digital solutions through cutting-edge technologies and clean code. My mission combines technical excellence with continuous learning to deliver secure, scalable websites and applications that solve real challenges while maintaining the highest standards of performance, usability, and aesthetic perfection.</p>
+            <!-- <div class="flex w-full justify-center">
+                <button class="rounded-md border-2 border-black text-white text-lg bg-[#105652] w-[25%] h-12 tracking-[8px] text-center" style="font-family: 'Bebas Neue', sans-serif;">More</button>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- skill sector -->
+    <div class="inline mx-auto my-0">
+        <h1 class="text-[50px] tracking-wider text-center underline underline-offset-10" style="font-family: 'Bebas Neue', sans-serif;">SKILLS 💼</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center items-center p-8 mb-6">
+        <div class="flex flex-col w-full max-w-[400px] h-[300px] p-2 transition-all duration-300 ease-in-out hover:translate-y-1 hover:shadow-2xl bg-white rounded-md mx-auto">
+            <img src="../img/webdesign.png" class="w-[30%] h-auto mx-auto my-0" alt="webdesign">
+            <h1 class="text-center text-[30px] font-bold tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">Web Design</h1>
+            <p class="text-center italic">"Designing website is seemed to difficult as for me, it is a piece of cake because of my huge interest in creative."</p>
+        </div>
+        <div class="max-w-[400px] h-[300px] p-2 transition-all duration-300 ease-in-out hover:translate-y-1 hover:shadow-2xl bg-white rounded-md mx-auto">
+            <img src="../img/webdevelopment.png" class="w-[30%] h-auto mx-auto my-0" alt="webdevelopment">
+            <h1 class="text-center text-[30px] font-bold tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">Web Development</h1>
+            <p class="text-center italic">"Where others fear broken code, I engineer seamless solutions—turning technical challenges into fast, functional websites with clean, scalable logic."</p>
+        </div>
+        <div class="max-w-[400px] h-[300px] p-2 transition-all duration-300 ease-in-out hover:translate-y-1 hover:shadow-2xl bg-white rounded-md mx-auto">
+            <img src="../img/communication.png" class="w-[30%] h-auto mx-auto my-0" alt="communication">
+            <h1 class="text-center text-[30px] font-bold tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">Active Communication</h1>
+            <p class="text-center italic">"Bridging technical and non-technical worlds, I translate complex concepts into clear language that aligns teams and delights stakeholders equally."</p>
+        </div>
+        <div class="flex flex-col w-full max-w-[400px] h-[300px] p-2 transition-all duration-300 ease-in-out hover:translate-y-1 hover:shadow-2xl bg-white rounded-md mx-auto">
+            <img src="../img/management.jpg" class="w-[30%] h-auto mx-auto my-0" alt="management">
+            <h1 class="text-center text-[30px] font-bold tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">Management</h1>
+            <p class="text-center italic">"Leading projects with strategic vision, I align resources and timelines to deliver exceptional results while mentoring teams to achieve their full potential."</p>
+        </div>
+        <div class="flex-1 max-w-[400px] h-[300px] p-2 transition-all duration-300 ease-in-out hover:translate-y-1 hover:shadow-2xl bg-white rounded-md mx-auto">
+            <img src="../img/team work.png" class="w-[30%] h-auto mx-auto my-0" alt="teamwork">
+            <h1 class="text-center text-[30px] font-bold tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">Team Work</h1>
+            <p class="text-center italic">"Collaborating seamlessly across disciplines, I bridge diverse perspectives to build cohesive solutions where collective success outweighs individual contributions."</p>
+        </div>
+        <div class="flex-1 max-w-[400px] h-[300px] p-2 transition-all duration-300 ease-in-out hover:translate-y-1 hover:shadow-2xl bg-white rounded-md mx-auto">
+            <img src="../img/problem solving.png" class="w-[30%] h-auto mx-auto my-0" alt="problemsolving">
+            <h1 class="text-center text-[30px] font-bold tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">Problem-Sovling</h1>
+            <p class="text-center italic">"Analyzing complex challenges systematically, I craft innovative solutions that balance technical feasibility with practical execution for sustainable results."</p>
+        </div>
+    </div>
+    <!-- Background and performance -->
+    <div class="mt-12">
+        <div class="inline mx-auto my-0">
+            <h1 class="text-[50px] tracking-wider text-center underline underline-offset-8" style="font-family: 'Bebas Neue', sans-serif;">My Performance and Expertise</h1>
+        </div>
+    </div>
+    <div class="flex-col-1 md:flex-col-1 lg:flex h-auto mt-10">
+        <div class="w-full">
+            <h1 class="text-[25px] md:text-[30px] lg:text-[35px] tracking-wider text-center" style="font-family: 'Bebas Neue', sans-serif;">My Performance Rating</h1>
+            <div class="p-4">
+                <div class="w-full flex h-[500px] bg-[#f9f9f7] rounded-lg transition-all duration-500 ease-in-out hover:-transform-y-4 hover:shadow-2xl">
+                    <div class="w-full list-none flex flex-col justify-center item-baseline pl-6 md:pl-10 lg:pl-12 gap-10 font-bold text-sm md:text-lg lg:text-xl">
+                        <li>Time Management</li>
+                        <li>Communication</li>
+                        <li>Active in doing project</li>
+                        <li>Error Handling</li>
+                        <li>Good utilization of search engine</li>
+                        <li>Structured Adherence</li>
+                        <li>Collaboration</li>
+                    </div>
+                    <div class="w-[70%] flex flex-col justify-center gap-10 p-0 md:p-4 lg:p-4 items-start">
+                        <div class="flex gap-2">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/rating.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/star.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                            <img src="../img/rating.png" class="w-[20px] md:w-[30px] lg:w-[30px] h-auto" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full items-center">
+            <div class="flex justify-center">
+                <div class="inline-flex rounded-full bg-white p-1">
+                    <!-- Button 1 (Active by default) -->
+                    <button
+                        id="edBtn"
+                        data-active="true"
+                        class="px-8 py-3 bg-black text-white tracking-wider text-xl rounded-full transition-all duration-300 ease-in-out education-btn"
+                        style="font-family: 'Bebas Neue', sans-serif;">
+                        Education Background
+                    </button>
+
+                    <!-- Button 2 (Inactive by default) -->
+                    <button
+                        id="weBtn"
+                        data-active="false"
+                        class="px-8 py-3 bg-white text-black tracking-wider text-xl rounded-full transition-all duration-300 ease-in-out work-btn"
+                        style="font-family: 'Bebas Neue', sans-serif;">
+                        Work Experience
+                    </button>
+                </div>
+            </div>
+
+            <!-- Education Content (Visible by default) -->
+            <div id="educationContent">
+                <div class="flex-col p-4 mt-6">
+                    <h1 class="font-bold text-2xl mb-4">2018-2019</h1>
+                    <p class="text-justify">Matriculation passed with 2 distinctions: Biology and Chemistry subjects.</p>
+                </div>
+                <div class="flex-col p-4">
+                    <h1 class="font-bold text-2xl mb-4">2019-2020</h1>
+                    <p class="text-justify">Achieve both elementary and pre-intermidiate English Certificate From SCBI.</p>
+                </div>
+                <div class="flex-col p-4">
+                    <h1 class="font-bold text-2xl mb-4">2020-2021</h1>
+                    <p class="text-justify">Attend the IELTS Warrior for IELTS preparation and Achieve overall score 6.0 through the IELTS Academic exam.</p>
+                </div>
+                <div class="flex-col p-4">
+                    <h1 class="font-bold text-2xl mb-4">2021-2025</h1>
+                    <p class="text-justify">Complete the foundation program, Higher National Certificate and Higher National Diploma related with Software Engineering.</p>
+                </div>
+            </div>
+
+            <!-- Work Experience Content (Hidden by default) -->
+            <div id="workContent" class="hidden">
+                <div class="flex-col p-4 mt-4">
+                    <h1 class="font-bold text-2xl">Role - Intern Front-End Web Developer</h1>
+                    <h1 class="font-bold text-xl mb-2">Company - Data Land Technology Organization</h1>
+                    <h1 class="font-bold text-xl mb-4">2022 - 2023</h1>
+                    <p class="text-justify text-sm leading-6">In 2022-2023, I was a Front-End Web Developer at Data Land Technology, where I transformed designs into responsive, interactive websites. Collaborating with design and back-end teams, I used the latest tech to enhance projects and participated in agile development. This role honed my coding skills and highlighted the value of teamwork, shaping my growth as a developer.</p>
+                </div>
+                <div class="flex-col p-4">
+                    <h1 class="font-bold text-2xl">Role - Intern Back-End Web Developer</h1>
+                    <h1 class="font-bold text-xl mb-1">Company - Fast Technology Company</h1>
+                    <h1 class="font-bold text-xl mb-4">2022 - 2023</h1>
+                    <p class="text-justify text-sm leading-6">In 2022-2023, I was a Backend Web Developer at Fast Technology Company. My role involved working on the behind-the-scenes part of websites and applications. I focused on server-side development, databases, and making sure everything ran smoothly. Collaborating with the team, I contributed to building robust and efficient web solutions. It was a dynamic experience where I learned a lot about coding and teamwork. Working at Fast Technology Company during this time was a significant part of my journey as a Backend Web Developer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project sector -->
+
+    <div class="mt-10">
+        <div class="inline mx-auto my-0">
+            <a name="project">
+                <h1 class="text-[50px] tracking-wider text-center underline underline-offset-8" style="font-family: 'Bebas Neue', sans-serif;">My Recent Projects</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="w-full flex-col-1 md:flex-col-1 lg:flex p-6 mt-6 space-x-6 md:space-x-4 lg:space-x-4 h-auto items-center">
+        <div class="w-full">
+            <img src="../img/ecom/whole_ecom_website.png" class="aspect-2/3 rounded-lg shadow-2xl border-1 border-black" alt="whole_ecom_website">
+        </div>
+        <div class="flex flex-col p-2 text-justify">
+            <h1 class="text-[35px] md:text-[40px] lg:text-[45px] mt-6 tracking-wider text-left" style="font-family: 'Bebas Neue', sans-serif;">
+                Ecommerce Website (FitFlex)
+            </h1>
+            <p class="text-xl leading-10">FitFlex is a premier online destination for top-tier sportswear, offering everything from high-performance athletic shoes to stylish jerseys and must-have accessories. Whether you're a runner seeking the perfect pair of cushioned sneakers, a gym enthusiast in need of moisture-wicking jerseys, or a fan looking for your favorite team’s gear, FitFlex delivers quality and style. The site also features a curated selection of accessories like sweat-resistant headbands, durable gym bags, and compression socks to elevate your workout. With intuitive navigation, exclusive deals, and fast, reliable shipping, FitFlex makes it effortless to shop for sportswear that combines innovation, comfort, and unbeatable flair.</p>
+        </div>
+    </div>
+    <div class="w-full flex-col-1 md:flex-col-1 lg:flex p-6 mt-6 space-x-6 md:space-x-4 lg:space-x-4 h-auto items-center">
+        <div class="w-full">
+            <img src="../img/ecom/whole_ecom-website 2.png" class="aspect-2/3 rounded-lg shadow-2xl border-1 border-black" alt="whole_ecom_website">
+        </div>
+        <div class="flex flex-col p-2 text-justify">
+            <h1 class="text-[35px] md:text-[40px] lg:text-[45px] tracking-wider mt-6 text-left" style="font-family: 'Bebas Neue', sans-serif;">
+                Ecommerce Website (DreamWorld)
+            </h1>
+            <p class="text-xl leading-10">DreamWorld is a bold and inclusive eCommerce destination offering stylish clothing, shoes, and accessories—like statement belts—designed for the bisexual community and beyond. Whether you're looking for vibrant gender-fluid fashion, edgy streetwear, or sleek unisex footwear, DreamWorld celebrates self-expression with daring designs and premium quality. The shop features curated accessories, including eye-catching belts, layered necklaces, and versatile bags to complete any look. With easy browsing, exclusive drops, and fast shipping, DreamWorld empowers you to embrace your unique style with confidence and pride.</p>
+        </div>
+    </div>
+
+
+    <!-- footer sector -->
+    <div class="w-full h-[300px] p-20 flex flex-col mt-6 justify-center items-center border-t-2 border-black">
+        <h1 class="text-[30px] md:text-[80px] lg:text-[100px] text-[#b91646]" style=" font-family: 'Playwrite RO', cursive;">Let's Work</h1>
+        <h2 class="text-[50px] tracking-wide" style="font-family: 'Bebas Neue', sans-serif;">Together</h2>
+        <div class="flex mx-auto w-[70%] md:w-[40%] lg:w-[20%] justify-around">
+            <a href="https://www.facebook.com/htet.p.phyo.98434/" target="_blank"><img src="../img/facebook.png" class="w-10 h-auto" alt="Facebook"></a>
+            <a href="https://t.me/htetpaingphyoe" target="_blank"><img src="../img/telegram.jpg" class="w-10 h-auto rounded-md" alt="Telegram"></a>
+            <a href="https://github.com/htetpaingphyoe/FitFlex_Ecommercee.git" target="_blank"><img src="../img/github.png" class="w-10 h-auto" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/htet-paing-phyoe-3350252a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="../img/linkedin.png" class="w-10 h-auto" alt="LinkedIN"></a>
+        </div>
+    </div>
+
+
+
+    <!-- js import file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../assets/vendore/texllate/jquery.fittext.js"></script>
+    <script src="../assets/vendore/texllate/jquery.lettering.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <script src="text.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu functionality
+            const mobileMenuButton = document.querySelector(".mobile-menu-button");
+            const mobileMenu = document.querySelector(".mobile-menu");
+            const menuIcon = mobileMenuButton.querySelector("i");
+
+            // Education/Work toggle functionality
+            const edBtn = document.getElementById('edBtn');
+            const weBtn = document.getElementById('weBtn');
+            const educationContent = document.getElementById('educationContent');
+            const workContent = document.getElementById('workContent');
+
+            // Mobile menu toggle
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('fa-bars');
+                menuIcon.classList.toggle('fa-times');
+            });
+
+            // Close mobile menu when item is clicked
+            document.querySelectorAll('.mobile-menu a').forEach(item => {
+                item.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+
+            // Education/Work toggle function
+            function toggleContent(activeBtn) {
+                const isEducation = activeBtn === edBtn;
+
+                // Update button states
+                edBtn.dataset.active = isEducation;
+                weBtn.dataset.active = !isEducation;
+
+                // Update button styles
+                edBtn.classList.toggle('bg-black', isEducation);
+                edBtn.classList.toggle('text-white', isEducation);
+                edBtn.classList.toggle('bg-white', !isEducation);
+                edBtn.classList.toggle('text-black', !isEducation);
+
+                weBtn.classList.toggle('bg-black', !isEducation);
+                weBtn.classList.toggle('text-white', !isEducation);
+                weBtn.classList.toggle('bg-white', isEducation);
+                weBtn.classList.toggle('text-black', isEducation);
+
+                // Toggle content visibility
+                educationContent.classList.toggle('hidden', !isEducation);
+                workContent.classList.toggle('hidden', isEducation);
+            }
+
+            // Set initial state
+            toggleContent(edBtn);
+
+            // Event listeners
+            edBtn.addEventListener('click', () => toggleContent(edBtn));
+            weBtn.addEventListener('click', () => toggleContent(weBtn));
+
+            // Close menu on large screens
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
